@@ -6,7 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		623A18472D836291006F7275 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A18462D836291006F7275 /* Location.swift */; };
+		623A184A2D8363E9006F7275 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A18492D8363E9006F7275 /* LocationsDataService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		623A18462D836291006F7275 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		623A18492D8363E9006F7275 /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		62981B5A2D7E1DFB0099917A /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -29,11 +36,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623A18432D8361C5006F7275 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				623A18462D836291006F7275 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		623A18442D8361DA006F7275 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		623A18452D8361F3006F7275 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		623A18482D8363A2006F7275 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				623A18492D8363E9006F7275 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 		62981B512D7E1DFB0099917A = {
 			isa = PBXGroup;
 			children = (
+				623A18482D8363A2006F7275 /* DataServices */,
 				62981B5C2D7E1DFB0099917A /* MapApp */,
+				623A18432D8361C5006F7275 /* Models */,
 				62981B5B2D7E1DFB0099917A /* Products */,
+				623A18452D8361F3006F7275 /* ViewModels */,
+				623A18442D8361DA006F7275 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623A184A2D8363E9006F7275 /* LocationsDataService.swift in Sources */,
+				623A18472D836291006F7275 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
