@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct LocationView: View {
     
@@ -13,10 +14,9 @@ struct LocationView: View {
     
     var body: some View {
         
-        List {
-            ForEach(vm.locations) {
-                Text($0.name)
-            }
+        ZStack{
+             Map(coordinateRegion: $vm.mapRegion)
+                .ignoresSafeArea()
         }
         
     }
