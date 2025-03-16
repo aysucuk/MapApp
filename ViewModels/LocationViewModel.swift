@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import SwiftUICore
 
 class LocationViewModel: ObservableObject {
     
@@ -41,7 +42,16 @@ class LocationViewModel: ObservableObject {
     }
     
     func toggleLocationsList(){
-        self.showLocationsList.toggle()
+        withAnimation(.easeInOut){
+            self.showLocationsList.toggle()
+        }
+    }
+    
+    func showNextLocation(location: Location){
+        withAnimation(.easeInOut){
+            mapLocation = location
+            showLocationsList = false
+        }
     }
     
 }
